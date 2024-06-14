@@ -19,18 +19,18 @@
 .optmenu {
     font-family: 'playfair display', sans-serif;
     font-size: 1rem;
+    color: #000 !important;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .optmenu:hover {
-    color: #fff;
-    background-color: #000;
+    color: white !important;
     border-radius: 30px;
 }
 
 .optmenu:active {
-    background-color: #ffb347;
     color: #000;
-    border-radius: 30px;
 }
 
 /* PERSONALIZACION MENU HAMBURGUESA */
@@ -84,11 +84,103 @@
 .espacio {
     padding: 120px 0;
 }
+
+.textbanner{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'open sans', sans-serif;
+}
+
+.btn-outline-warning {
+    background-color: transparent;
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+.btn-outline-warning:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 /*********************  HEADER ******************************/
+
+
+/********************* nosotros ******************************/
+.textus{
+    font-size: 16px;
+    font-family: 'open sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+/********************* nosotros ******************************/
+
+/********************* cursos ******************************/
+.row i{
+    font-size: 20px;
+}
+
+.price-table {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #d6d6d6;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 100px;
+    background-color: cover;
+}
+
+.price-table:hover {
+    background-color: #294A3C;
+    margin-top: -40px;
+    z-index: 10;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in;
+    border: none;
+    box-shadow: rgba(127, 197, 207, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+}
+
+.price-table:hover * {
+    color: #fff !important;
+}
+
+.price {
+    font-size: 70px;
+    font-weight: 300;
+    color: #333c4d;
+}
+
+.dollar {
+    vertical-align: top;
+    font-size: 17px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #222;
+}
+/********************* cursos ******************************/
 
 /*********************  Contacto ******************************/
 .container-fluidcontacto{
     background-color: #0C422A;
+}
+
+.textcontact{
+    font-size: 15px;
+    font-family: 'open sans', sans-serif;
+    letter-spacing: 1px;
 }
 
 /*-----------------------------------redes sociales------------------------------------*/

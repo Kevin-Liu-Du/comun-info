@@ -18,19 +18,29 @@
         <!--Libreria de REMIXicons-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 
+        <!-- carga de la libreria ANIMATE.CSS CDN -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
     </head>
     <body>
 
-        <header class="container-fluid1 banner1">
+        <header class="container-fluid1 banner1" id="inicio">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-6 text-left text-white">
-                        <h1 style="font-family:'playfair display', sans-serif; font-size: 45px; letter-spacing: 1px;"> Cursos en línea </h1>
+                    <div class="col-md-12 col-lg-7 text-left text-white pt-5">
+                        <h1 class="wow animate__animated animate__zoomIn animate__delay-300ms" style="font-family:'playfair display', sans-serif; font-size: 45px; letter-spacing: 1px;"> Impulsa tu <strong style="color: #129a5d;">futuro</strong> con nuestra educación </h1>
+
+                        <p class="textbanner text-left text-white pt-5 pb-5">
+                            Ofrecemos cursos de alta calidad para desarrollar habilidades y conocimientos en diversas áreas.
+                        </p>
+
+                        <button type="button" class="btn btn-outline-warning" id="cursos">Explorar cursos</button>
                     </div>
 
-                    <div class="col-md-6 col-lg-6">
-                        
+                    <div class="col-md-12 col-lg-5">
+                        <div class="container-fluid">
+                            <div class="animacion1"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,10 +70,10 @@
                         <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#inicio"><i class="ri-home-2-line"></i>Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#cursos"><i class="ri-book-2-line"></i>Cursos</a>
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#nosotros"><i class="ri-tree-line"></i>Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#nosotros"><i class="ri-tree-line"></i>Nosotros</a>
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#cursos"><i class="ri-book-2-line"></i>Cursos</a>
                     </li>
                     <li class="nav-item">
                         <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="#estudiante"><i class="uil uil-user-circle"></i>Estudiante</a>
@@ -79,6 +89,97 @@
         <!--Cierre del menu-->
     </nav>
 
+    <section id="nosotros">
+        <div class="containerus">
+            <div class="container">
+                <h1 class="text-center pt-5 pb-5" style="font-family:'playfair display', sans-serif; font-size: 45px; letter-spacing: 1px;"> Nosotros </h1>
+                <div class="row">
+                    <div class="col-md-6 col-lg-5 text-left text-white pt-5 pb-5"></div>
+                    <div class="col-md-6 col-lg-7 text-left text-white pb-5">
+                        <h1 class="text-left text-black" style="font-family:'playfair display', sans-serif; font-size: 30px; letter-spacing: 1px;"> ¿Quiénes somos? </h1>
+                        <p class="text-left text-black textus">
+                            Somos cenati, el centro nacional de formación en tecnologías e idiomas. Ofrecemos cursos y talleres para mejorar tu empleabilidad y habilidades, haciéndote un candidato competitivo.
+                            Encuentra el curso ideal para tu desarrollo profesional y prepárate para el futuro con nosotros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid bg-light" id="cursos">
+        <div class="container pt-5">
+            <div class="">
+                <h1 class="text-center" style="font-family:'playfair display', sans-serif; font-size: 45px; letter-spacing: 1px;"> Cursos </h1>
+            </div>
+            <div class="pt-5"></div>
+
+
+            <!-- AQUI VA EL CODIGO TABLA DE PRECIOS -->
+
+            <div class="row pt-5">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="price-table col-md-4 col-lg-4">
+                            <a href="https://www.booking.com/landmark/ae/burj-dubai.en.html?aid=314920;label=burj-dubai-tOtacwfoCPj*SpJRyO5x5gS388400115544:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-30819167475:lp9068563:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8;ws=&gad_source=1&gclid=CjwKCAjwte-vBhBFEiwAQSv_xfT9XLvy1lUH0kjqQI0bPAW0gfWFi0RO4DDuv5hknaJogAekJRfcKxoC_8kQAvD_BwE" target="blank">
+                                <i class="ri-hotel-bed-fill"></i>
+                                <h2>Básico</h2>
+                                <div class="dollar">Hoteles<i class="ri-hotel-line"></i></div><br>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <div class="price">1</div>
+                                <div class="">
+                                    <p>Alojamiento económico</p>
+                                    <p>Transporte terrestre</p>
+                                    <p>Desayuno diario</p>
+                                    <p>Actividades básicas</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="price-table col-md-4 col-lg-4">
+                            <a href="https://www.booking.com/landmark/ae/burj-dubai.en.html?aid=314920;label=burj-dubai-tOtacwfoCPj*SpJRyO5x5gS388400115544:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-30819167475:lp9068563:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8;ws=&gad_source=1&gclid=CjwKCAjwte-vBhBFEiwAQSv_xfT9XLvy1lUH0kjqQI0bPAW0gfWFi0RO4DDuv5hknaJogAekJRfcKxoC_8kQAvD_BwE" target="blank">
+                                <i class="ri-goblet-2-fill"></i>
+                                <h2>Estándar</h2>
+                                <div class="dollar">Hoteles<i class="ri-hotel-line"></i></div><br>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <div class="price">2</div>
+                                <div class="">
+                                    <p>Alojamiento confortable</p>
+                                    <p>Transporte de calidad</p>
+                                    <p>Desayuno y almuerzo</p>
+                                    <p>Variedad de excursiones</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="price-table col-md-4 col-lg-4">
+                            <a href="https://www.booking.com/landmark/ae/burj-dubai.en.html?aid=314920;label=burj-dubai-tOtacwfoCPj*SpJRyO5x5gS388400115544:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-30819167475:lp9068563:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8;ws=&gad_source=1&gclid=CjwKCAjwte-vBhBFEiwAQSv_xfT9XLvy1lUH0kjqQI0bPAW0gfWFi0RO4DDuv5hknaJogAekJRfcKxoC_8kQAvD_BwE" target="blank">
+                                <i class="ri-goblet-2-fill"></i>
+                                <h2>Estándar</h2>
+                                <div class="dollar">Hoteles<i class="ri-hotel-line"></i></div><br>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <div class="price">2</div>
+                                <div class="">
+                                    <p>Alojamiento confortable</p>
+                                    <p>Transporte de calidad</p>
+                                    <p>Desayuno y almuerzo</p>
+                                    <p>Variedad de excursiones</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
     <section id="contacto">
         <div class="container-fluidcontacto">
             <div class="container">
@@ -86,10 +187,14 @@
                     <div class="col-md-6 col-lg-6 text-left text-white pt-5 pb-5">
                         <h1 style="font-family:'playfair display', sans-serif; font-size: 45px; letter-spacing: 1px;"> Contacto </h1>
 
+                        <p class="text-left text-white textcontact">
+                            Para más información sobre los cursos, puede contactarnos de las siguientes maneras:
+                        </p>
+
                         <div class="social-icons pb-5">
                             <div class="containerface">
                                 <a href="#" target="_blank"><i class="ri-facebook-box-line"></i></a>
-                                <div class=" textoredes text-left" style="margin-left: 5px; font-size: 16px;">CENATI</div>
+                                <div class=" textoredes text-left" style="margin-left: 5px; font-size: 16px;">Cenati</div>
                             </div>
                             <div class="containerwhat">
                                 <a href="#" target="_blank"><i class="ri-whatsapp-line"></i></a>
@@ -101,7 +206,7 @@
                             </div>
                             <div class="containerinsta">
                                 <a href="#" target="_blank"><i class="ri-instagram-line"></i></a>
-                                <div class=" textoredes text-left" style="margin-left: 5px; font-size: 16px;">CENATI_CR</div>
+                                <div class=" textoredes text-left" style="margin-left: 5px; font-size: 16px;">Cenati_cr</div>
                             </div>
                         </div>
 
@@ -172,7 +277,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 text-white pt-5 pb-5 text-center">
                     <img src="img/logo1.png" style="width: 80px;">
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-white text-center pt-5 pb-5">@CENATI - Todos los derechos reservados</div>
+                <div class="col-lg-3 col-md-6 col-sm-12 text-white text-center pt-5 pb-5">@Cenati - Todos los derechos reservados</div>
                 <div class="col-lg-3 col-md-6 col-sm-12 text-white text-center pt-5 pb-5">Políticas de privacidad</div>
                 <div class="col-lg-3 col-md-6 col-sm-12 text-white text-center pt-5 pb-5">
                     <img src="img/CR.png" style="width: 20px;">
@@ -182,5 +287,36 @@
     </footer>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- interactividad Lottie JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+        <!-- libreria Lottie JS-->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+        <!-- cargar el archivo JS, el js hace la parte interactiva-->
+        <script src="js/wow.min.js"></script>
+        <!-- activa los efectos de animacion -->
+        <script>
+            new WOW().init();
+        </script>
+
+        <script>
+            let anima = document.querySelector(".animacion1");
+            let animation = bodymovin.loadAnimation({
+                container: anima,
+                path: "https://lottie.host/8b50ff55-9997-4a90-b191-4adb25bc057a/P9Mub9zblz.json",
+                renderer: "svg",
+                loop: true,
+                autoplay: false,
+            });
+
+            anima.style.width = "400px";
+            
+
+            anima.addEventListener("click", function() {
+                animation.play();
+            });
+        </script>
     </body>
 </html>
