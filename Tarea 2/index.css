@@ -102,10 +102,11 @@
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     letter-spacing: 1px;
+    font-family: 'playfair display', sans-serif;
 }
 .btn-outline-warning:hover {
     background-color: #ffc107;
-    color: white;
+    color: black;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
@@ -122,54 +123,105 @@
     font-size: 16px;
     font-family: 'open sans', sans-serif;
     letter-spacing: 1px;
+    text-align: left !important;
+    margin-top: 15px;
 }
 
+/* Contenedor de la imagen */
+.img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo de la imagen */
+.img-container img {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.img-container:hover img {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Estilo de un posible título o leyenda */
+.img-container .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    color: white;
+    text-align: left;
+    font-family: 'playfair display', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: none; /* Oculto por defecto */
+}
+
+.img-container:hover .caption {
+    display: block; /* Muestra la leyenda al pasar el mouse */
+}
 /********************* nosotros ******************************/
 
 /********************* cursos ******************************/
-.row i{
-    font-size: 20px;
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 .price-table {
-    padding-top: 40px;
-    padding-bottom: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
     text-align: center;
-    background-color: #fff;
-    border: 2px solid #d6d6d6;
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-    margin-bottom: 100px;
-    background-color: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .price-table:hover {
-    background-color: #294A3C;
-    margin-top: -40px;
-    z-index: 10;
-    transform: scale(1.2);
-    transition: all 0.2s ease-in;
-    border: none;
-    box-shadow: rgba(127, 197, 207, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.price-table:hover * {
-    color: #fff !important;
+.price-table h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #2c3e50;
 }
 
-.price {
-    font-size: 70px;
-    font-weight: 300;
-    color: #333c4d;
+.price-table p {
+    font-size: 16px;
+    color: #7f8c8d;
+    text-align: left;
 }
 
-.dollar {
-    vertical-align: top;
-    font-size: 17px;
-    display: inline-block;
+.textcurso{
+    font-size: 16px;
+    font-family: 'open sans', sans-serif;
+    letter-spacing: 1px;
+    text-align: left !important;
     margin-top: 15px;
-    color: #222;
 }
+
+a {
+    text-decoration: none;
+}
+
+.price-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 /********************* cursos ******************************/
 
 /*********************  Contacto ******************************/
@@ -178,7 +230,7 @@
 }
 
 .textcontact{
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'open sans', sans-serif;
     letter-spacing: 1px;
 }
