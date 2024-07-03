@@ -1,0 +1,284 @@
+.main-text{
+    margin-top: 100px;
+    padding-left: 30px;
+}
+.text-title{
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+}
+.text-para{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containerheader{
+    background-image: linear-gradient(to top, #FFFFFF, #C60C30, #003478, #000000);
+    color:white;
+}
+.img-fluid{
+    height:200px !important;
+}
+
+.custom-clip {
+    clip-path: xywh(0 5px 100% 75% round 15% 0);
+}
+
+/* Estado normal del botón */
+.btn-dark {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    background-color: #002F6C; /* Azul claro suave */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    font-weight: 600; /* Fuente en negrita */
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0 49%, 0% 0%); /* Clip path inicial */
+    display: inline-flex; /* Flexbox para alineación */
+    align-items: center; /* Alineación vertical */
+    transition: all 0.5s ease; /* Transiciones suaves */
+}
+
+.btn-dark:hover {
+    background-color: #002F6C; /* Azul más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumento de tamaño al pasar el mouse */
+    clip-path: polygon(88% 0, 100% 50%, 87% 100%, 0% 100%, 11% 50%, 0% 0%); /* Clip path al pasar el mouse */
+}
+
+.btn-dark:active {
+    background-color: transparent; /* Azul claro aún más oscuro al hacer clic */
+    transform: scale(0.95); /* Disminución de tamaño al hacer clic */
+}
+
+.btn-dark:before {
+    content: url(); /* Icono temático de Corea */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.btn-dark:after {
+    margin-left: 10px; /* Espacio entre el texto y el emoji */
+}
+
+
+/* Estilizando los botones de control del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px; /* Ancho de los botones */
+    height: 50px; /* Alto de los botones */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: all 0.3s ease; /* Transición suave */
+    /* Alineación horizontal */
+    position: absolute;
+    top: 50%; /* Alinea desde la mitad superior del contenedor */
+    transform: translateY(-50%); /* Centra verticalmente respecto a su posición */
+}
+
+/* Hover effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia el color de fondo al pasar el ratón */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); /* Aumenta la sombra */
+}
+
+
+/*-----------------------------------banner1------------------------------------*/
+.banner-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed; /*efecto parallax*/
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(100vh);
+    background-position: center;
+    background-image: url('../img/Bukchon.jpg');
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.espacio {
+    padding: 120px 0;
+}
+
+/*------------------------------------suscripcion-----------------------------------------*/
+.seccionInscripcion {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/garaje1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    background-attachment: fixed;
+}
+
+.seccionInscripcion h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 45px;
+    padding-top: 100px;
+}
+
+
+.email {
+    width: 200px; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    outline: none;
+}
+
+.botonenviar {
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+/*------------------------------------suscripcion-----------------------------------------*/
+
+/*----------------------------------------CHAT WHATAPP forma 2---------------------------------*/
+
+.container-botonws {
+    background-color: rgb(4,187,57); 
+    border: none; 
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 5px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-botonws:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/*efecto de animación imagen chat*/
+
+.botonws {
+    width: 60px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(4, 187, 57, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+/*termina CHAT WHATAPP forma 2*/
+
+
+
+/*------------------------------------boton scrolltop-----------------------------------------*/
+
+#scrollToTopBtn {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 99;
+    background-color: transparent;
+    color: red;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#scrollToTopBtn:hover {
+    color: black;
+}
+
+/*------------------------------------boton scrolltop-----------------------------------------*/
+
+
+/*------------------------------------Redes Sociales-----------------------------------------*/
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons .instagram-icon:hover i {
+    color: #ff0080; /* Color de Instagram al pasar el mouse */
+}
+
+.social-icons .facebook-icon:hover i {
+    color: #4267B2; /* Color de Facebook al pasar el mouse */
+}
+
+.social-icons .twitter-icon:hover i {
+    color: #00acee; /* Color de Twitter al pasar el mouse */
+}
+
+.social-icons i {
+    font-size: 30px;
+    color: #333; /* Color de los iconos */
+}
+/*------------------------------------Redes Sociales-----------------------------------------*/
+
+/*---------------------------------------------Estilos para el footer------------------------------------*/
+footer.container-fluid {
+    position: relative; /* Fijar el footer en la parte inferior */
+    bottom: 0; /* Colocar el footer al final de la página */
+    width: 100%; /* Ancho completo del footer */
+    display: flex; /* Usar flexbox para centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    padding: 20px 0; /* Espaciado interior del footer */
+    z-index: 9999; /* Asegurar que el footer esté por encima de otros elementos */
+    padding-top: 20px;
+}
+
+a {
+    font-weight: bolder;
+}
+
+footer.container-fluid ul {
+    list-style: none; /* Eliminar los estilos de lista predeterminados */
+    margin: 0; /* Eliminar el margen */
+    padding: 0; /* Eliminar el relleno */
+}
+
+footer.container-fluid ul li {
+    display: inline; /* Mostrar los elementos de lista en línea */
+    margin: 0 10px; /* Agregar un margen entre los elementos de lista */
+    color: #000; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+footer.container-fluid ul li a {
+    color: #000; /* Color del texto del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+}
+
+footer.container-fluid ul li a:hover {
+    color: #00469B;
+}
