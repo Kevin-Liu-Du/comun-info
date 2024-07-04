@@ -4,13 +4,13 @@
 }
 .text-title{
     font-family: "Roboto", sans-serif;
-    font-size: 3rem;
     letter-spacing: 0.5px;
+    font-size: 3rem;
 }
 .text-para{
     font-family: "Noto Sans", sans-serif;
-    font-size: 20px;
     letter-spacing: 0.5px;
+    font-size: 20px;
 }
 
 header{
@@ -87,29 +87,265 @@ header{
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); /* Aumenta la sombra */
 }
 
-
-/*-----------------------------------banner1------------------------------------*/
-.banner-section {
-    display: flex;
-    align-items: center;
+/*------------------------------------servicios-----------------------------------------*/
+#seviciios {
+    width: 100%;
     position: relative;
-    background-attachment: fixed; /*efecto parallax*/
-    background-size: cover;
-    /*control altura del banner*/
-    height: calc(100vh);
-    background-position: center;
-    background-image: url('../img/Bukchon.jpg');
-    background-blend-mode: multiply;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    padding: 50px 0 100px;
 }
 
-.espacio {
-    padding: 120px 0;
+#servicios h2 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
 }
+
+#servicios p {
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 0.5px;
+    color: #8c8989;
+    font-size: 24px;
+}
+
+#servicios .row {
+    padding-top: 70px;
+}
+
+#servicios .card-services {
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    transition: .4s;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#servicios .card-services:hover{
+    background-color: #002F6C;
+}
+
+#servicios .card-services img {
+    background-color: white;
+    width: 25%;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute; /*esto desbloquea la imagen para que se pueda mover libremente, se necesita tener el position relative de arriba para poder hacer esto*/
+    top: -40px;
+    left: 35px;
+}
+
+#servicios .card-services h3{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    text-align: right;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#servicios .card-services h4 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#servicios .card-services p {
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+#servicios .card-services a{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: white;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+
+/*------------------------------------servicios-----------------------------------------*/
+
+/*------------------------------------swiper-----------------------------------------*/
+#destinos {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(to bottom, #FFFFFF, #C60C30, #003478, #000000);
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#destinos h3 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: #000; 
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#destinos h5 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: #000; 
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#destinos .subtitulodestino {
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 0.5px;
+    color: white;
+    font-size: 24px;
+}
+
+#destinos p {
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+#destinos a{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: black;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+swiper-container {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.card{
+    border-radius: 25px;
+    padding: 10px;
+}
+.card-img-top{
+    border-radius: 25px;
+}
+/*------------------------------------swiper-----------------------------------------*/
+
+
+/*------------------------------------audio-----------------------------------------*/
+#audio h2{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: #000; 
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#audio .subtituloaudio {
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 0.5px;
+    color: #292c36;
+    font-size: 20px;
+}
+
+
+#audio p {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    color: #000; 
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+/*
+.audioimg1 {
+    background-color: white;
+    width: 50%;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute; 
+    top: -120px;
+    left: 300px;
+} 
+
+
+.audioimg2 {
+    background-color: white;
+    width: 25%;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute; 
+    top: -50px;
+    left: -50px;
+}
+
+.audioimg3 {
+    background-color: white;
+    width: 25%;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute; 
+    top: -50px;
+    left: -50px;
+}
+
+*/
+
+.border-green{
+    border: 7px solid #002F6C;
+}
+
+.text-green{
+    color: #B51036;
+}
+
+
+/*------------------------------------audio-----------------------------------------*/
+
+/*------------------------------------mapa-----------------------------------------*/
+.text-titlemapa{
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+/*------------------------------------mapa-----------------------------------------*/
+
 
 /*------------------------------------suscripcion-----------------------------------------*/
 .seccionInscripcion {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/garaje1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Bukchon.jpg");
     background-repeat: no-repeat;
     background-position: center;
     height: 450px;
