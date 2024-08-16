@@ -84,6 +84,331 @@
 
 /*********************  MENU NAV ******************************/
 
+/*-----------------------------------timeline------------------------------------*/
+body{
+    background-color: #e1f5f4;
+}
+.timeline{
+    padding-top: 50px;
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.containertimeline{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.containertimeline:nth-child(1){
+    animation-delay: 0s;
+}
+.containertimeline:nth-child(2){
+    animation-delay: 1s;
+}
+.containertimeline:nth-child(3){
+    animation-delay: 2s;
+}
+.containertimeline:nth-child(4){
+    animation-delay: 3s;
+}
+.containertimeline:nth-child(5){
+    animation-delay: 4s;
+}
+.containertimeline:nth-child(6){
+    animation-delay: 5s;
+}
+
+.text-box{
+    font-family: 'istok web';
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+}
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.containertimeline img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.text-box h2{
+    font-weight: 600;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+
+@media screen and (max-width:600px) {
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .containertimeline{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+
+    .left-container img, .right-container img{
+        left: 10px;
+    }
+
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+/*-----------------------------------timeline------------------------------------*/
+
+/*-----------------------------------about us------------------------------------*/
+.about{
+    background: url(../img/nosotros.jpg) no-repeat left;
+    background-size: 65%;
+    background-color: #fcf5e9;
+    overflow: hidden;
+    padding: 110px 0;
+}
+.inner-section{
+    width: 50%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 170px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Istok web';
+}
+.text{
+    font-family: 'Yantramanav';
+    font-size: 18px;
+    color: #545454;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.skills button{
+    font-family: 'Yantramanav';
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: #00999c;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #00999c;
+}
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+
+
+/*-----------------------------------about us------------------------------------*/
+
+
+/*-----------------------------------valores------------------------------------*/
+.wrapper{
+    margin-top: 2%;
+  }
+  
+  .wrapper h1{
+    font-family: 'Istok web';
+    font-weight: 900;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .team{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .team .team_member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;  
+    position: relative;
+  }
+  
+  .team .team_member h3{
+    font-family: 'Istok web';
+    color: #36BEB4;
+    font-size: 26px;
+    margin-top: 50px;
+  }
+  
+  .team .team_member p.role{
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Yantramanav';
+  }
+
+  .team .team_member p{
+    margin: 12px 0;
+    font-size: 14px;
+    font-family: 'Yantramanav';
+  }
+  
+  .team .team_member .team_img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+
+
+/*-----------------------------------valores------------------------------------*/
+
+
 /*-----------------------------------footer------------------------------------*/
 footer {
     padding-top: 30px;

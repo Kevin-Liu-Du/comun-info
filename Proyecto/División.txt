@@ -10,29 +10,35 @@ Historia de la clínica.
 Equipo médico y sus credenciales.
 Filosofía y valores de la clínica.
 Certificaciones y reconocimientos.
+
 Tratamientos:
 
 Lista detallada de todos los tratamientos ofrecidos (ej. botox, rellenos dérmicos, rejuvenecimiento facial).
 Descripción de cada tratamiento con imágenes o videos explicativos.
 Beneficios, duración y precios aproximados.
+
 Tecnología:
 
 Explicación de las tecnologías y equipos utilizados.
 Diferencias entre tecnologías y sus beneficios.
 Videos o demostraciones de procedimientos.
+
 Resultados:
 
 Galería de imágenes de antes y después.
 Testimonios detallados de clientes.
 Casos de éxito destacados.
+
 Blog o Noticias:
 
 Artículos sobre tendencias en medicina estética.
 Consejos y recomendaciones post-tratamiento.
 Actualizaciones sobre nuevos tratamientos o tecnologías.
+
 Contacto:
 
 Formulario de contacto.
 Mapa y dirección de la clínica.
+2 formualrios
 Información para agendar citas (teléfono, correo).
 Horarios de atención y enlaces a redes sociales.

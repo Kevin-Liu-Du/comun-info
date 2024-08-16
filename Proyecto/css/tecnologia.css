@@ -1,0 +1,281 @@
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 0.1rem;
+    font-family: 'Istok web';
+}
+
+.nav-item {
+    margin: 0 10px; /* Espaciado entre los ítems */
+}
+
+.nav-link {
+    font-family: 'Istok web';
+    font-size: 18px;
+    font-weight: 500; /* Peso de fuente normal */
+    padding: 10px 15px; /* Espaciado interno */
+    color: #000 !important; /* Color del texto negro */
+    text-decoration: none; /* Sin subrayado por defecto */
+    transition: background-color 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
+    border-radius: 20px;
+}
+
+.nav-link:hover {
+    color: #ADDEDA !important; /* Color del texto blanco al pasar el ratón */
+    text-decoration: 1.5px underline; /* Subrayado en hover */
+    transform: scale(1.1); /* Agrandar el texto al pasar el ratón */
+    transition: color 0.4s ease, background-color 0.4s ease; /* Animación de color y fondo */
+}
+
+.nav-link.active {
+    font-weight: 700; /* Más negrita en el enlace activo */
+    color: #000 !important; /* Color del texto negro en el enlace activo */
+}
+
+/*active es cuando le das click*/
+.nav-link:active {
+    color: #000 !important; /* Color del texto negro al hacer clic */
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler {
+    background-color: #36beb4; /* Color de fondo del botón hamburguesa */
+    border: none; /* Quitar borde */
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    background-color: #52b2a7; /* Fondo al pasar el ratón */
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: transparent;
+}
+
+/* PERSONALIZACION lineas HAMBURGUESA */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.fondo1 {
+    background-color: #36beb4;
+}
+
+.fondo2 {
+    background-color: #41658a;
+}
+
+/*--logo--*/
+.logo1 {
+    width: 17%;
+    border-radius: 1rem;
+    -webkit-box-shadow: 3px 3px 2.5px 3px #000;
+    -moz-box-shadow: 3px 3px 2.5px 3px #000;
+    box-shadow: 3px 3px 2.5px 3px #000;
+}
+
+/*********************  MENU NAV ******************************/
+
+
+/*-----------------------------------modal------------------------------------*/
+body{
+    background-color: #f0f4f8; /* Fondo suave y claro */
+}
+
+.tecnology {
+    padding: 70px 0 !important;
+}
+
+.titulo1 {
+    color: #36beb4; /* Color del título en #36beb4 */
+    font-family: 'istok web'; /* Tipografía elegante */
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.tecnology hr {
+    width: 60%;
+    border: 0;
+    border-top: 2px solid #eaba6b; /* Línea divisoria en color #eaba6b */
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    border: 1px solid #e0e0e0; /* Borde sutil */
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Efecto hover */
+}
+
+.card img {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    height: 180px; /* Ajustar la altura de la imagen */
+}
+
+.card-title {
+    font-family: 'istok web'; /* Tipografía elegante */
+    color: #52b2a7; /* Color del título */
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-family: 'Yantramanav';
+    color: #666666; /* Color del texto */
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.modal-content {
+    background-color: #ffffff; /* Fondo blanco para el modal */
+    border-radius: 20px;
+    border: 1px solid #e0e0e0; /* Borde sutil */
+}
+
+.modal-header {
+    border-bottom: 1px solid #e0e0e0; /* Línea divisoria en modal */
+}
+
+.modal-title {
+    font-family: 'istok web'; /* Tipografía elegante */
+    color: #36beb4; /* Color del título del modal */
+}
+
+.modal-body {
+    font-family: 'Yantramanav';
+    color: #333333; /* Color del texto del modal */
+    line-height: 1.8;
+}
+
+.btn-warning {
+    background-color: #eaba6b; /* Color de fondo del botón */
+    border: none;
+    color: #ffffff; /* Color del texto del botón */
+    padding: 12px 24px;
+    font-family: 'Yantramanav';
+    font-weight: 600;
+    border-radius: 30px; /* Botón redondeado */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #d9a45b; /* Cambio de color en hover */
+    transform: scale(1); /* Efecto de escala en hover */
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.tecnology2 {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+}
+
+.tecnology2 hr {
+    width: 60%;
+    border: 0;
+    border-top: 2px solid #eaba6b; /* Línea divisoria en color #eaba6b */
+    margin: 20px auto;
+}
+
+.tecnology3 {
+    padding-top: 10px;
+}
+
+.tecnology3 hr {
+    width: 60%;
+    border: 0;
+    border-top: 2px solid #eaba6b; /* Línea divisoria en color #eaba6b */
+    margin: 20px auto;
+}
+
+/*modal*/
+
+/*-----------------------------------modal------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------footer------------------------------------*/
+footer {
+    padding-top: 30px;
+    margin-top: 30px;
+    background-color: #000;
+}
+
+/*-----------------------------------redes sociales------------------------------------*/
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #36beb4;
+    color: #000; /* Cambio a color blanco */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #ADDEDA;
+    color: white;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+/*-----------------------------------redes sociales------------------------------------*/
+
+/*-----------------------------------enlaces------------------------------------*/
+.enlaces {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    display: block; /* Convertir enlaces en bloques para que ocupen todo el ancho */
+    margin-top: 20px; /* Espacio superior entre enlaces */
+    transition: color 0.3s ease; /* Transición suave del color del texto */
+}
+
+/* Cambio de color al pasar el ratón sobre los enlaces */
+.enlaces:hover {
+    color: #ADDEDA; /* Color del texto al pasar el ratón */
+}
+
+/*-----------------------------------enlaces------------------------------------*/
+
+/*-----------------------------------footer----------------------------------------------------------------*/
