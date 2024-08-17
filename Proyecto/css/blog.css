@@ -106,7 +106,7 @@ img{
 /* header */
 header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner-bg.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/Blog.jpg) center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -405,6 +405,70 @@ footer{
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------suscripcion-----------------------------------------*/
+/* Container Styles */
+
+
+.text-white {
+    color: #fff; /* White text color */
+}
+
+/* Form Styles */
+form#inscription {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #36beb4; /* Background color for the section */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Input Styles */
+input.email {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input.email:focus {
+    border: 2px solid #52b2a7; /* Border color on focus */
+    box-shadow: 0 0 8px rgba(82, 178, 167, 0.4);
+}
+
+input.botonenviar {
+    background-color: #eaba6b; /* Button color */
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input.botonenviar:hover {
+    background-color: #f6b93b; /* Darker button color on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input.email, input.botonenviar {
+        width: 100%;
+    }
+}
+
+/*------------------------------------suscripcion-----------------------------------------*/
 
 /*-----------------------------------footer------------------------------------*/
 footer {
